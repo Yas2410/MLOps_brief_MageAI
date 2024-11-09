@@ -8,6 +8,7 @@ We'll use [the same NYC taxi dataset](https://www1.nyc.gov/site/tlc/about/tlc-tr
 
 First, let's run Mage with Docker Compose. Follow the quick start guideline.
 
+:white_check_mark: 
 ***Below the quick start guideline used : ***
 ```
 git clone https://github.com/mage-ai/compose-quickstart.git mage-quickstart
@@ -62,7 +63,7 @@ How many records did we load?
 ## Question 4. Data preparation
 
 
-Let's use the same logic for preparing the data we used previously. We will need to create a transformer code block and put this code there.
+Let's use the same logic for preparing the data we used previously. We will need to create a transformer code block and put this code there.mage
 
 This is what we used (adjusted for yellow dataset):
 
