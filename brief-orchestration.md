@@ -4,6 +4,10 @@ The goal of this brief is to create a simple training pipeline, use mlflow to tr
 
 We'll use [the same NYC taxi dataset](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page), the **Yellow** taxi data for March, 2023.
 
+:white_check_mark:
+***Data path:"your_first_project/brief_03/data/yellow_tripdata_2023-03.parquet"***
+
+
 ## Question 1. Run Mage
 
 First, let's run Mage with Docker Compose. Follow the quick start guideline.
@@ -18,6 +22,9 @@ rm dev.env
 docker compose up
 
 ```
+:white_check_mark:
+***Project path: mage-quickstart/your_first_project/Brief_03***
+***Pipeline path: mage-quickstart/your_first_project/pipelines/brief_03_pipeline***
 
 What's the version of Mage we run?
 
