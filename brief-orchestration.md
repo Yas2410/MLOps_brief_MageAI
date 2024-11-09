@@ -8,9 +8,23 @@ We'll use [the same NYC taxi dataset](https://www1.nyc.gov/site/tlc/about/tlc-tr
 
 First, let's run Mage with Docker Compose. Follow the quick start guideline.
 
+***Below the quick start guideline used : ***
+```
+git clone https://github.com/mage-ai/compose-quickstart.git mage-quickstart
+cd mage-quickstart
+cp dev.env .env
+rm dev.env
+docker compose up
+
+```
+
 What's the version of Mage we run?
 
 (You can see it in the UI)
+
+:white_check_mark: 
+***The version is v0.9.74***
+*https://github.com/mage-ai/mage-ai/releases*
 
 
 ## Question 2. Creating a project
@@ -24,6 +38,10 @@ How many lines are in the created `metadata.yaml` file?
 - 55
 - 65
 
+:white_check_mark: 
+***55 lines***
+
+
 ## Question 3. Creating a pipeline
 
 Let's create an ingestion code block.
@@ -36,6 +54,10 @@ How many records did we load?
 - 3,203,766
 - 3,403,766
 - 3,603,766
+
+:white_check_mark: 
+***3,403,766 records***
+
 
 ## Question 4. Data preparation
 
@@ -71,6 +93,9 @@ What's the size of the result?
 - 3,103,766
 - 3,316,216
 - 3,503,766
+
+:white_check_mark: 
+***The size of the result is 3,316,216***
 
 ## Question 5. Train a model
 
