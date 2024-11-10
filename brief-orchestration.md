@@ -6,6 +6,7 @@ We'll use [the same NYC taxi dataset](https://www1.nyc.gov/site/tlc/about/tlc-tr
 
 :white_check_mark:
 ***Data path:***
+
 "your_first_project/brief_03/data/yellow_tripdata_2023-03.parquet"
 
 
@@ -14,7 +15,7 @@ We'll use [the same NYC taxi dataset](https://www1.nyc.gov/site/tlc/about/tlc-tr
 First, let's run Mage with Docker Compose. Follow the quick start guideline.
 
 :white_check_mark: 
-***Below the quick start guideline used : ***
+***Below the quick start guideline used :***
 ```
 git clone https://github.com/mage-ai/compose-quickstart.git mage-quickstart
 cd mage-quickstart
@@ -25,8 +26,12 @@ docker compose up
 ```
 :white_check_mark:
 ***Project path:***
+
 mage-quickstart/your_first_project/Brief_03
+
+:white_check_mark:
 ***Pipeline path:***
+
 mage-quickstart/your_first_project/pipelines/brief_03_pipeline
 
 What's the version of Mage we run?
@@ -35,6 +40,7 @@ What's the version of Mage we run?
 
 :white_check_mark: 
 ***The version is v0.9.74***
+
 *https://github.com/mage-ai/mage-ai/releases*
 
 
@@ -196,12 +202,20 @@ Find the logged model, and find MLModel file. What's the size of the model? (`mo
 
 > Note: typically we do last two steps in one code block.
 
+:white_check_mark: 
+***Model_size_bytes is 4534***
+
 
 ## Question 7. Plot Metrics
 
 Modify your code so that it calculates MAE, MSE, and RMSE metrics and logs them to mlflow.
 
 Fetch the logged metrics from MLFlow and plot them in a chart in your pipeline's dashboard.
+
+:white_check_mark:
+***Graph Folder path:***
+
+"your_first_project/outputs"
 
 
 ## Push your solution to GitHub

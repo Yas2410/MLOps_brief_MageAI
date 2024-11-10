@@ -35,7 +35,8 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - register_model
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -48,6 +49,39 @@ blocks:
   upstream_blocks:
   - prepare
   uuid: build
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - plot_metrics
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: register_model
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - build
+  uuid: register_model
+- all_upstream_blocks_executed: true
+  color: pink
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: plot_metrics
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - register_model
+  uuid: plot_metrics
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

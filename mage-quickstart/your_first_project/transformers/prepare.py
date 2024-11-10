@@ -28,6 +28,10 @@ def transform(data, *args, **kwargs):
     categorical = ['PULocationID', 'DOLocationID']
     data[categorical] = data[categorical].astype(str)
 
+    # Sauvegarde des données transformées dans un fichier intermédiaire
+    # Etape ajustée car sinon erreur "dataframe" (voir bloc 4)
+    data.to_parquet('/tmp/transformed_data.parquet')
+
     return data
 
 

@@ -16,6 +16,9 @@ def load_data(*args, **kwargs):
     file_path = "your_first_project/Brief_03/data/yellow_tripdata_2023-03.parquet"
     data = pd.read_parquet(file_path)
 
+    # Sauvegarde des données transformées dans un fichier intermédiaire
+    data.to_parquet('/tmp/transformed_data.parquet')
+
     return data
 
 
